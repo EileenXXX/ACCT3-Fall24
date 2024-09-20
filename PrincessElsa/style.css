@@ -1,0 +1,29 @@
+body {
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #444;
+    margin: 30px 20px; /* Increased margin for headers */
+}
+
+p, pre {
+    line-height: 1.6;
+    margin: 20px auto; /* Centered with automatic margins */
+    width: 60%; /* Set a specific width */
+    display: block; /* Change from inline-block to block for width to take effect */
+    text-align: left;
+}
+
+
+img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 40px auto; /* Increased margin for images */
+}
