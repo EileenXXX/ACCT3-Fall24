@@ -1,29 +1,70 @@
+/* Add a Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
 body {
-    font-family: poppins;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #e0f7fa, #80deea); /* Subtle icy gradient */
     color: #333;
     text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
 h1, h2 {
-    color: #444;
-    margin: 30px 20px; /* Increased margin for headers */
+    color: #004d61; /* Icy blue color for headers */
+    margin: 30px 20px;
+    font-weight: 700; /* Bold for more impact */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Adds depth to headers */
 }
 
 p, pre {
     line-height: 1.6;
-    margin: 20px auto; /* Centered with automatic margins */
-    width: 60%; /* Set a specific width */
-    display: block; /* Change from inline-block to block for width to take effect */
+    margin: 20px auto;
+    width: 60%;
+    display: block;
     text-align: left;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for text sections */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
 }
-
 
 img {
     width: 70%;
     height: auto;
     display: block;
-    margin: 40px auto; /* Increased margin for images */
+    margin: 40px auto;
+    border-radius: 12px; /* Rounded corners for images */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Box shadow to make images pop */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+body:hover {
+    background-color: #e0f4f8; /* Lighter blue on hover */
+}
+
+/* Add a fancy hover effect for links if needed */
+a {
+    color: #007b92;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004d61;
+    text-decoration: underline;
 }
