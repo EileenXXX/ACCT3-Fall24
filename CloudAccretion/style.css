@@ -83,6 +83,7 @@ video {
     height: auto;
     border-radius: 12px; /* Optional: Adds rounded corners to the video */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow around the video */
+    transition: transform 0.3s ease;
 }
 
 
@@ -92,6 +93,10 @@ video {
     align-items: center; /* Vertically centers the video */
     height: 100vh; /* Takes full viewport height */
     background-color: rgba(255, 249, 196, 0.9); /* Optional: Background for the container */
+}
+
+video:hover {
+    transform: scale(1.05); /* Slight zoom on hover, same as images */
 }
 
 
