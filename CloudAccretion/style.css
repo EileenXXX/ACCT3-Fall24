@@ -5,17 +5,22 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #e0f7fa, #80deea); /* Subtle icy gradient */
-    color: #333;
+    background: linear-gradient(to bottom, #fff9c4, #ffeb3b); /* Warm yellow gradient */
+    color: #4d3a00; /* Dark brown for text */
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
 
-h1, h2 {
-    color: #004d61; /* Icy blue color for headers */
+h1 {
+    font-size: 3em;
+    color: #32CD32; /* Bright green (Lime Green) */
+}
+
+
+h2 {
+    color: #0d93f3; /* Deep golden yellow for headers */
     margin: 30px 20px;
     font-weight: 700; /* Bold for more impact */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Adds depth to headers */
 }
 
 p, pre {
@@ -24,7 +29,7 @@ p, pre {
     width: 60%;
     display: block;
     text-align: left;
-    background-color: rgba(255, 255, 255, 0.8); /* Light background for text sections */
+    background-color: rgba(255, 253, 236, 0.914); /* Light yellow background for text sections */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
@@ -36,7 +41,7 @@ img {
     display: block;
     margin: 40px auto;
     border-radius: 12px; /* Rounded corners for images */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Box shadow to make images pop */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for images */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
@@ -54,17 +59,41 @@ h2 {
 }
 
 body:hover {
-    background-color: #e0f4f8; /* Lighter blue on hover */
+    background-color: #fffde7; /* Lighter yellow tone on hover */
 }
 
 /* Add a fancy hover effect for links if needed */
 a {
-    color: #007b92;
+    color: #d6a200; /* Golden yellow for links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #004d61;
+    color: #b38600; /* Darker golden yellow on hover */
     text-decoration: underline;
 }
+
+/* Center the video in the middle of the screen */
+/* Center the video in the middle of the screen */
+video {
+    display: block;
+    margin: 40px auto; /* Same margin as the images */
+    max-width: 80%; /* Ensure the video scales properly on smaller screens */
+    height: auto;
+    border-radius: 12px; /* Optional: Adds rounded corners to the video */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow around the video */
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the video */
+    align-items: center; /* Vertically centers the video */
+    height: 100vh; /* Takes full viewport height */
+    background-color: rgba(255, 249, 196, 0.9); /* Optional: Background for the container */
+}
+
+
+
+
