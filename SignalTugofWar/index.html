@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<link href="style.css" rel="stylesheet">
+<head>
+    <title>Synesthetic Relationship</title>
+</head>
+<body>
+    <h1>Synesthetic Relationship: Signal Tug-of-War</h1>
+
+    <h2>Project Brief</h2>
+    <p>Signal Tug of War is an interactive system designed to explore the concept of data-driven communication between two users, represented here as "Eileen" and "Aurora." The project emphasizes real-time data exchange, feedback loops, and tangible interactions through sensory input and output mechanisms. This system not only highlights the responsive connection between user inputs but also serves as a metaphorical "tug of war" where data, feedback, and physical changes influence interactions in meaningful ways.
+        <img src="overview.jpg">
+    </p>
+        
+    <h2>Component List</h2>
+    <p>2 breadboards, a sliding potentiometer, a distance sensor, a led, a RGB sensor, a micro servo motor.
+        <img src="components.png">
+    </p>
+    
+    <h2>Mind Map</h2>
+    <p> 1. Aurora slides the potentiometer → Generates input data (Feed 1) → Motor starts or reverses based on input.</p>
+    <p>2. Aurora's distance detector measures proximity → Sends distance data (Feed 2) to Eileen.</p>
+    <p>3. Eileen's system evaluates distance data → If condition is met (e.g., X < Y), LED lights up.</p>
+    <p>4. Eileen's RGB sensor detects LED illumination → Measures and sends "lux" data back to Aurora.</p>
+    <p>5. Aurora's system receives "lux" data → Motor reverses direction, restarting the communication loop.</p>
+    <p><img src="MINDMAP.png"></p>
+    
+    <h2>Codes and Adafruit IO Feeds</h2>
+    <p> Here are the Arduino codes for Eileen's feed and Aurora's feed.  
+        <img src="CODES.png"></p>
+    <p> Here are the real-time feeds' reactions.
+        <img src="feeds.jpg"></p>
+        
+
+    <h2>Close Shots of Important interactions</h2>
+    <p>The first part: The sliding potentiometer controls the motor's rotation based on its position.
+        <img src="motor.gif"> </p>
+    <p>The second part: The motor drives a mechanical device that moves a ring through a connected system.
+        <img src="led.gif"> </p>
+    <p>The third part: The LED lights up, and its light is detected by a light sensor as feedback.
+        <img src="distance.gif"> </p>
+
+    <h2>Final Video & Photos</h2>
+    <p><video width="70%" height="auto" controls>
+        <source src="Signal Tug-of-War.mp4" type="video/mp4">
+    </video>
+    <img src="motor.jpg">
+    <img src="distance.jpg">
+    <img src="breadboard1.jpg">
+    <img src="breadboard2.jpg">
+    <img src="overview2.jpg">
+    </p>
+
+</body>
+</html>
