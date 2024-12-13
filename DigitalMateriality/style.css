@@ -1,0 +1,73 @@
+/* Add a Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, 
+        hsl(0, 50%, 80%) 0%,     /* Soft Red */
+        hsl(30, 50%, 80%) 16.6%, /* Soft Orange */
+        hsl(60, 50%, 80%) 33.3%, /* Soft Yellow */
+        hsl(120, 50%, 80%) 50%,  /* Soft Green */
+        hsl(200, 50%, 80%) 66.6%,/* Soft Blue */
+        hsl(240, 50%, 80%) 83.3%,/* Soft Indigo */
+        hsl(270, 50%, 80%) 100%  /* Soft Violet */
+    );
+    background-size: 300% 300%; /* Allow gradient to animate */
+    animation: rainbow 5s linear infinite; /* Add animation */
+    color: hsl(60, 2%, 9%); /* Dark brown for text */
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Keyframes for rainbow gradient animation */
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    font-size: 3em;
+    color: #2c3e50; /* Bright white for headings */
+}
+
+h2 {
+    color: #2c3e50; /* White for headers */
+    margin: 30px 20px;
+    font-weight: 700; /* Bold for more impact */
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+p, pre {
+    line-height: 1.6;
+    margin: 20px auto;
+    width: 60%;
+    display: block;
+    text-align: left;
+    background-color: rgba(255, 253, 236, 0.8); /* Light yellow background for text sections */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+}
+
+img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+    border-radius: 12px; /* Rounded corners for images */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for images */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+body:hover {
+    background-color: #fffde78f; /* Lighter yellow tone on hover */
+}
+
